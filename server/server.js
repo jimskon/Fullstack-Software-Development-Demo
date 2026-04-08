@@ -32,6 +32,6 @@ app.get('*', (req, res, next) => {
   res.sendFile(path.join(clientDistPath, 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on http://10.192.145.179:${PORT}`);
 });
